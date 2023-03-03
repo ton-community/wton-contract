@@ -110,7 +110,6 @@ const special::unwrap_op_length = 23;
   }
   throw_unless(error::not_enough_tons, msg_value > 0);
   if(forward_ton_amount) {
-    msg_value -= (forward_ton_amount + fwd_fee);
     slice either_forward_payload = in_msg_body;
     var msg = null();
     ;; check forward_payload for number 8388449 encoded in 23 bits
