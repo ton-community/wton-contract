@@ -2,8 +2,7 @@
 #include "params.func";
 
 cell pack_jetton_wallet_data(int balance, slice owner_address, slice jetton_master_address, cell jetton_wallet_code) inline {
-   return  begin_cell()
-            .store_coins(balance)
+  return  begin_cell()
             .store_slice(owner_address)
             .store_slice(jetton_master_address)
             .store_ref(jetton_wallet_code)
